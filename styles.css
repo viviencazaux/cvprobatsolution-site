@@ -583,7 +583,7 @@ h3 {
   color: white;
   background:
     linear-gradient(120deg, rgba(20, 24, 26, 0.96), rgba(20, 24, 26, 0.86)),
-    url("assets/renovation-batiment.jpg") center / cover;
+    url("assets/appel-offre-dossier-technique.png") center / cover;
 }
 
 .contact-lines {
