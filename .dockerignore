@@ -1,0 +1,9 @@
+.git
+.agents
+.codex
+deploy-raspberry
+access.log
+node-server-*.log
+server-*.log
+serve-site.ps1
+static-server.mjs

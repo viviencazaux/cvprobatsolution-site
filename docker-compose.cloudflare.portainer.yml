@@ -1,0 +1,24 @@
+services:
+  cvprobatsolution:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: cvprobatsolution-site
+    restart: unless-stopped
+    expose:
+      - "80"
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://127.0.0.1/health"]
+      interval: 30s
+      timeout: 3s
+      retries: 3
+      start_period: 10s
+
+  cloudflared:
+    image: cloudflare/cloudflared:latest
+    container_name: cvprobatsolution-cloudflared
+    restart: unless-stopped
+    command: tunnel --no-autoupdate run --token ${CLOUDFLARE_TUNNEL_TOKEN}
+    depends_on:
+      cvprobatsolution:
+        condition: service_healthy

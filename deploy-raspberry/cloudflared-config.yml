@@ -1,0 +1,9 @@
+tunnel: REMPLACER_PAR_UUID_TUNNEL
+credentials-file: /home/pi/.cloudflared/REMPLACER_PAR_UUID_TUNNEL.json
+
+ingress:
+  - hostname: cvprobatsolution.fr
+    service: http://localhost:80
+  - hostname: www.cvprobatsolution.fr
+    service: http://localhost:80
+  - service: http_status:404
