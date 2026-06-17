@@ -615,6 +615,12 @@ h3 {
   font-weight: 800;
 }
 
+.optional-field {
+  color: rgba(255, 255, 255, 0.52);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
 .contact-form input,
 .contact-form select,
 .contact-form textarea {

@@ -31,23 +31,26 @@ nav?.querySelectorAll("a").forEach((link) => {
 form?.addEventListener("submit", (event) => {
   event.preventDefault();
   const data = new FormData(form);
-  const name = data.get("name");
-  const email = data.get("email");
-  const subject = data.get("subject");
-  const message = data.get("message");
+  const name = String(data.get("name") || "").trim();
+  const email = String(data.get("email") || "").trim();
+  const phone = String(data.get("phone") || "").trim();
+  const subject = String(data.get("subject") || "").trim();
+  const message = String(data.get("message") || "").trim();
   const body = [
-    `Nom: ${name}`,
-    `Email: ${email}`,
-    `Prestation: ${subject}`,
+    `Prénom / Nom : ${name}`,
+    `Email : ${email}`,
+    phone ? `Téléphone : ${phone}` : null,
+    `Prestation souhaitée : ${subject}`,
     "",
-    "Message:",
+    "Message :",
     message,
-  ].join("\n");
+  ]
+    .filter(Boolean)
+    .join("\r\n");
 
-  const mailto = new URL("mailto:cvprobatsolution@outlook.fr");
-  mailto.searchParams.set("subject", `Demande de contact - ${subject}`);
-  mailto.searchParams.set("body", body);
-  window.location.href = mailto.toString();
+  const mailSubject = `Demande de contact - ${subject}`;
+  const mailto = `mailto:cvprobatsolution@outlook.fr?subject=${encodeURIComponent(mailSubject)}&body=${encodeURIComponent(body)}`;
+  window.location.href = mailto;
 
   if (formNote) {
     formNote.textContent = "Votre messagerie va s'ouvrir avec le message préparé.";
