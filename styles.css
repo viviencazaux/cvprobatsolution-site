@@ -165,6 +165,19 @@ a {
   width: min(760px, 100%);
 }
 
+.hero-logo {
+  width: min(420px, 82vw);
+  margin: 0 0 28px;
+  border-radius: 10px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.34);
+}
+
+.hero-text {
+  display: grid;
+  gap: 14px;
+  width: min(680px, 100%);
+}
+
 .eyebrow {
   margin: 0 0 14px;
   color: var(--cyan);
@@ -203,7 +216,8 @@ h3 {
 }
 
 .hero-content p:not(.eyebrow) {
-  width: min(640px, 100%);
+  width: min(680px, 100%);
+  margin: 0;
   color: rgba(255, 255, 255, 0.82);
   font-size: clamp(1rem, 1.6vw, 1.18rem);
 }
@@ -772,6 +786,11 @@ h3 {
   .brand img {
     width: 40px;
     height: 40px;
+  }
+
+  .hero-logo {
+    width: min(310px, 78vw);
+    margin-bottom: 24px;
   }
 
   h1 {
