@@ -35,12 +35,14 @@ form?.addEventListener("submit", (event) => {
   const email = String(data.get("email") || "").trim();
   const phone = String(data.get("phone") || "").trim();
   const subject = String(data.get("subject") || "").trim();
+  const location = String(data.get("location") || "").trim();
   const message = String(data.get("message") || "").trim();
   const body = [
-    `Prénom / Nom : ${name}`,
+    `Nom / société : ${name}`,
     `Email : ${email}`,
     phone ? `Téléphone : ${phone}` : null,
-    `Prestation souhaitée : ${subject}`,
+    `Type de demande : ${subject}`,
+    location ? `Localisation du projet : ${location}` : null,
     "",
     "Message :",
     message,
@@ -53,6 +55,6 @@ form?.addEventListener("submit", (event) => {
   window.location.href = mailto;
 
   if (formNote) {
-    formNote.textContent = "Votre messagerie va s'ouvrir avec le message préparé.";
+    formNote.textContent = "Votre messagerie va s'ouvrir avec un message prêt à envoyer.";
   }
 });
