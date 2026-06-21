@@ -881,8 +881,9 @@ main > section[id],
   }
 
   .hero {
-    min-height: 96vh;
+    min-height: auto;
     padding-top: 96px;
+    padding-bottom: 58px;
   }
 
   main > section[id] {
@@ -905,11 +906,68 @@ main > section[id],
     right: auto;
     bottom: auto;
     left: auto;
-    margin-top: 44px;
+    margin-top: 28px;
+  }
+
+  .section {
+    padding-top: 58px;
+    padding-bottom: 58px;
+  }
+
+  .section-heading {
+    margin-bottom: 26px;
+  }
+
+  .target-card,
+  .service-card,
+  .mission-card {
+    min-height: auto;
   }
 
   .target-card {
-    min-height: auto;
+    padding: 22px;
+  }
+
+  .check-list {
+    gap: 10px;
+    margin-top: 18px;
+  }
+
+  .service-card {
+    padding: 22px;
+  }
+
+  .mission-card h3,
+  .mission-card p,
+  .sector-grid h3,
+  .sector-grid p {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .mission-card h3,
+  .sector-grid h3 {
+    margin-top: 20px;
+  }
+
+  .mission-card p,
+  .sector-grid p {
+    margin-bottom: 22px;
+  }
+
+  .ai-highlight {
+    margin: 18px 0 24px;
+    font-size: 1rem;
+  }
+
+  .ai-features article,
+  .contact-form {
+    padding: 22px;
+  }
+
+  .contact {
+    padding-top: 58px;
+    padding-bottom: 58px;
   }
 }
 
@@ -934,7 +992,39 @@ main > section[id],
   }
 
   h1 {
-    font-size: 2.2rem;
+    margin-bottom: 18px;
+    font-size: 1.95rem;
+    line-height: 1.08;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+    line-height: 1.12;
+  }
+
+  h3 {
+    font-size: 1.06rem;
+  }
+
+  p,
+  li {
+    line-height: 1.55;
+  }
+
+  .eyebrow {
+    margin-bottom: 10px;
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+  }
+
+  .hero-content p:not(.eyebrow) {
+    font-size: 0.98rem;
+    line-height: 1.52;
+  }
+
+  .hero-actions {
+    gap: 10px;
+    margin-top: 22px;
   }
 
   .hero-actions,
@@ -946,12 +1036,14 @@ main > section[id],
   .btn,
   .hero-actions a {
     width: 100%;
+    min-height: 44px;
+    padding: 10px 16px;
   }
 
   .service-card-media img,
   .mission-card img,
   .sector-grid img {
-    height: 210px;
+    height: 190px;
   }
 
   .mission-card img.image-contain {
@@ -960,11 +1052,68 @@ main > section[id],
 
   .field-image img,
   .dossier-image img {
-    height: 300px;
+    height: 250px;
   }
 
   .legal-page {
     padding-top: 104px;
+  }
+
+  .section {
+    padding-top: 46px;
+    padding-bottom: 46px;
+  }
+
+  .hero-strip span {
+    padding: 12px 14px;
+    font-size: 0.82rem;
+  }
+
+  .target-card,
+  .service-card,
+  .ai-features article,
+  .contact-form {
+    padding: 18px;
+  }
+
+  .check-list li {
+    padding-left: 24px;
+    font-size: 0.95rem;
+  }
+
+  .service-list {
+    gap: 10px;
+  }
+
+  .service-list li {
+    padding-left: 26px;
+  }
+
+  .mission-card h3,
+  .mission-card p,
+  .sector-grid h3,
+  .sector-grid p {
+    margin-right: 18px;
+    margin-left: 18px;
+  }
+
+  .mission-card p,
+  .sector-grid p {
+    font-size: 0.98rem;
+  }
+
+  .contact {
+    padding-top: 46px;
+    padding-bottom: 46px;
+  }
+
+  .contact-lines {
+    margin-top: 20px;
+  }
+
+  .contact-actions {
+    gap: 10px;
+    margin-top: 22px;
   }
 
   .legal-details div {
