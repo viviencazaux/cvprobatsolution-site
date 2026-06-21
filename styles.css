@@ -466,6 +466,12 @@ h3 {
   object-position: center;
 }
 
+.mission-card img.image-contain {
+  height: auto;
+  object-fit: contain;
+  background: #f7fbfb;
+}
+
 .mission-card h3,
 .mission-card p {
   margin-right: 24px;
@@ -866,6 +872,10 @@ h3 {
   .mission-card img,
   .sector-grid img {
     height: 210px;
+  }
+
+  .mission-card img.image-contain {
+    height: auto;
   }
 
   .field-image img,
