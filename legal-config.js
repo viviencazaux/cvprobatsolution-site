@@ -20,7 +20,6 @@ window.CVP_LEGAL_CONFIG = {
   insurance: {
     insurer: "ZURICH INSURANCE EUROPE AG, succursale française",
     insurerAddress: "112 avenue de Wagram, 75808 Paris Cedex 17",
-    policyNumber: "7400042328-198401023",
     validFrom: "2026-09-01",
     validUntil: "2026-12-31",
     certificateDate: "2026-09-04",
