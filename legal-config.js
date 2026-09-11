@@ -17,4 +17,21 @@ window.CVP_LEGAL_CONFIG = {
   hostingMode: "Auto-hébergement par l'éditeur via infrastructure personnelle sécurisée",
   technicalProvider: "Cloudflare France SAS",
   technicalProviderAddress: "6 place de la Madeleine, 75008 Paris",
+  insurance: {
+    insurer: "ZURICH INSURANCE EUROPE AG, succursale française",
+    insurerAddress: "112 avenue de Wagram, 75808 Paris Cedex 17",
+    policyNumber: "7400042328-198401023",
+    validFrom: "2026-09-01",
+    validUntil: "2026-12-31",
+    certificateDate: "2026-09-04",
+    decennialTerritory: "France métropolitaine et Corse, à l'exclusion des DROM-COM",
+    activities: [
+      "Maître d'œuvre tous corps d'état",
+      "Assistant maître d'œuvre",
+      "Économiste de la construction sans direction de l'exécution de travaux",
+      "Métreur / vérificateur",
+      "Dessinateur projeteur",
+      "Expertise (mission de formulation d'un avis)",
+    ],
+  },
 };
