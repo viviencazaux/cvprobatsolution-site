@@ -3,3 +3,4 @@ node-server-*.log
 server-*.log
 *.tmp
 *.bak
+/design-preview/

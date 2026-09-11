@@ -10,6 +10,6 @@ $ErrorActionPreference = "Stop"
 
 $target = "${RaspberryUser}@${RaspberryHost}:${RemotePath}/"
 
-scp -r "index.html" "styles.css" "script.js" "assets" $target
+scp -r "index.html" "mentions-legales.html" "politique-confidentialite.html" "styles.css" "script.js" "animations.js" "legal-config.js" "robots.txt" "sitemap.xml" "assets" $target
 
 Write-Host "Site envoye vers $target"

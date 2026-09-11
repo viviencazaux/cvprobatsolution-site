@@ -25,6 +25,7 @@ echo "Creation du dossier du site..."
 sudo mkdir -p "${SITE_ROOT}"
 sudo rsync -av --delete \
   --exclude "deploy-raspberry" \
+  --exclude "design-preview" \
   --exclude ".git" \
   --exclude "access.log" \
   --exclude "node-server-*.log" \
